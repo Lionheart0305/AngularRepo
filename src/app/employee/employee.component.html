@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th> Employee id</th>
+            <th>Employee Name</th>
+            <th>Employee Age</th>
+            <th>Employee Designation</th>
+        </tr>
+
+        <tr *ngFor='let e of emp'>
+            <td> {{e.employeeId}} </td>
+            <td> {{e.employeeName}} </td>
+            <td> {{e.employeeAge}} </td>
+            <td> {{e.employeeDesignation}} </td>
+        </tr>
+    </table>
+</body>
+</html>
+
